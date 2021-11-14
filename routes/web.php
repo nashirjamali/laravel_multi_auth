@@ -15,41 +15,41 @@ use App\Http\Controllers\Auth\LogoutController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('welcome');
 
-/**
- * Route untuk login
- */
-Route::get('/login', [LoginController::class, 'show'])->name('login.show'); //menampilkan halaman login
-Route::post('/login', [LoginController::class, 'authenticate'])->name('login.authenticate'); //mengirim data email dan password
+// /**
+//  * Route untuk login
+//  */
+// Route::get('/login', [LoginController::class, 'show'])->name('login.show'); //menampilkan halaman login
+// Route::post('/login', [LoginController::class, 'authenticate'])->name('login.authenticate'); //mengirim data email dan password
 
-/**
- * Route untuk logout
- */
-Route::post('/logout', [LogoutController::class, 'logout'])->name('logout'); //untuk logout
-
-
-/**
- * Route admin
- */
-Route::get('/admin/page', function () {
-    return view('admin.page');
-})->name('admin.page');
-
-/**
- * Route penjual
- */
-Route::get('/penjual/page', function() {
-    return view('penjual.page');
-})->name('penjual.page');
+// /**
+//  * Route untuk logout
+//  */
+// Route::post('/logout', [LogoutController::class, 'logout'])->name('logout'); //untuk logout
 
 
-/**
- * Route pembeli
- */
-Route::get('/pembeli/page', function () {
-    return view('pembeli.page');
-})->name('pembeli.page');
+// /**
+//  * Route admin
+//  */
+// Route::get('/admin/page', function () {
+//     return view('admin.page');
+// })->name('admin.page');
+
+// /**
+//  * Route penjual
+//  */
+// Route::get('/penjual/page', function() {
+//     return view('penjual.page');
+// })->name('penjual.page');
+
+
+// /**
+//  * Route pembeli
+//  */
+// Route::get('/pembeli/page', function () {
+//     return view('pembeli.page');
+// })->name('pembeli.page');
 
