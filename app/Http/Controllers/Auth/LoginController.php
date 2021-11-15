@@ -34,7 +34,7 @@ class LoginController extends Controller
          if ($status === true) {
 
             $user = Auth::user();
-            
+
             if ($user->hasRole('admin')) {
                 return redirect()->route('admin.page');
             }
@@ -54,7 +54,7 @@ class LoginController extends Controller
          * Jika email dan password salah
          */
         else {
-            return redirect()->route('login');
+            return redirect()->route('login.show');
         }
     }
 
